@@ -1,0 +1,7 @@
+.banner {
+  /* background-image: url("image/lci.png"); */
+  background-image: url("image/lci.png");
+  background-size: cover;
+  padding-top: 10%;
+  padding-bottom: 600px;
+}

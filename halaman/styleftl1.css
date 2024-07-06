@@ -1,0 +1,7 @@
+.banner {
+  background: url("../image/translogistik.png");
+  background-size: cover;
+  padding-top: 5%;
+  padding-bottom: 300px;
+  color: #fff;
+}

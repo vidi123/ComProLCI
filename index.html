@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LARIS CARGO INDONESIA</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet" 
+	crossorigin="anonymous"  />
+  <link rel="stylesheet" href="./stylelci2.css">
+	<link rel="icon" type="image/x-icon" href="https://lctranslog.com/image/logotranslogistik.png">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />    
+	
+</head>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1042.0">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+<div class="container-fluid"><a class="navbar-brand" href="">&nbsp; &nbsp; <img alt="" height="50" src="image/logotranslogistik.png" width="50" /></a><button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"></button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	
+	<li class="nav-item"><a aria-current="page" class="nav-link active" href="http://lctranslog.com/#pencarian">Pencarian</a></li>
+	<li class="nav-item"><a aria-current="page" class="nav-link active" href="#profil">Profil</a></li>
+	<li class="nav-item"><a aria-current="page" class="nav-link active" href="#layanan">Layanan</a></li>
+	<li class="nav-item"><a aria-current="page" class="nav-link active" href="#mitra">Mitra</a></li>
+	<li class="nav-item"><a aria-current="page" class="nav-link active" href="#hubungikami">Hubungi Kami</a></li>
+	
+</ul>
+ <i class="bi bi-list mobile-nav-toggle"></i>
+<form class="d-flex">
+    <a href="kemitraan/daftar.html" class="btn btn-danger" type="submit">Daftar Mitra Usaha</a>
+</form>
+</div>
+</div>
+</nav>
+
+
+<div class="container-fluid banner pt-5 pb-50">
+<div class="container text-center">
+    
+
+<h4 style="text-align: left;"><p class="text-dark"><span style="font-size:45px;"><strong>LARIS CARGO INDONESIA</strong></span></p></h4>
+<h4 style="text-align: left;"><p class="text-dark"><span style="font-size:30px;"><strong>SOLUSI TRANSPORTASI DAN KIRIMAN</strong></span></p></h4>
+<h4 style="text-align: left;"><p class="text-dark"><span style="font-size:30px;"><strong>KESELURUH WILAYAH INDONESIA</strong></span></p></h4>
+
+
+
+</div>
+</div>
+
+
+
+<!-- ======= Icon Boxes Section ======= -->
+<div class="container-fluid pt-5 pb-5 bg-dark">
+    <h2 style="text-align: center;" id= "pencarian"><font class="text-white" face="Arial, Helvetica, sans-serif"><span style="font-size: 30px;"><b>Lacak Atau Cek Tarif Kiriman Anda</b></span></font></h2>
+    <section id="icon-boxes" class="icon-boxes">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 text-white" data-aos="fade-up">
+                    <div class="icon-box">
+                        <h5>Lacak Kiriman</h5>
+                        <p class="description">
+                        <form action="/tracking/hasil" method="post" role="form">
+                            <input type="hidden" name="_token" value="">                            
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12">
+                                    <small class="form-text text-muted" style="color: #fff;">
+                                        <i></i>
+                                    </small>
+                                    <input type="text" class="form-control" name="resi" id="resi"
+                                        placeholder="No. Resi" style="background: #fff;">
+                            
+                                </div>
+                            </div>
+                            <br>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-danger" id="btntrace">Lacak Kiriman
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 text-white" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box">
+                        <h5 class="title">Tarif Pengiriman</h5>
+                        <p class="description">
+                        <form action="/action_page.php" method="post" role="form">
+                            <input type="hidden" name="_token" value="">                
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12">
+                                    <div class="custom-combobox">
+                                        <select name="kiriman" id="asal"
+                                            class="js-example-basic-single-daratasal form-control">
+                                            <option value="selected disable">Asal</option>
+                                                                                           
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12 padding-atas">
+                                    <div class="custom-combobox">
+                                        <select id="tujuan" name="kiriman"
+                                            class="js-example-basic-single-kiriman form-control">
+                                            <option value="selected disable">Tujuan</option>
+                                                                                            
+                                                                                                                                                                                    
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 padding-atas">
+                                    <small class="form-text text-muted" style="color: #fff;">
+                                    
+                                        <br>
+                                    </small>
+                                    <input type="number" class="form-control" name="Kilo" id="berat"
+                                        required="" min="1" placeholder="Berat (Kg)" style="background: #fff;">
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <br>
+                                    <div class="text-center"><button type="submit" class="btn btn-danger"
+                                            id="button-cek-tarif-darat">Cek Tarif</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 text-white" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box">
+                        <h5 class="title">Tarif Full Truck Load</h5>
+                        <p class="description">
+                        <form action="" method="post" role="form">
+                            <input type="hidden" name="_token" value="">                            
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12">
+                                    <div class="custom-combobox">
+                                        <select id="ftl" name="ftl"
+                                            class="js-example-basic-single-gudang form-control">
+                                            <option value="disabled selected">Asal</option>
+                                                                                            
+                                                                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12 padding-atas">
+                                    <div class="custom-combobox">
+                                        <select id="ftl" name="ftl"
+                                            class="js-example-basic-single-ftl form-control" disabled>
+                                            <option value="disabled selected">Tujuan</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 padding-atas">
+                                    <small class="form-text text-muted" style="color: #fff;">
+                                        <br>
+                                    </small>
+                                    <input type="alphabet" class="form-control" name="ftl" id="ftl"
+                                        min="1" required="" placeholder="Jenis Truk" style="background: #fff;">
+                                </div>
+                
+                                <div class="col-md-6 col-lg-6">
+                                    <br>
+                                    <div class="text-center"><button type="submit" class="btn btn-danger"
+                                            id="button-sewa-ftl">Cek Tarif</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+    </div>
+    
+    
+    <!-- Form -->
+    
+<!-- batas atas -->
+<div class="container my-5" >    
+        <div id="ongkirs" class="py-2"></div>    
+</div>
+<div class="container-fluid pt-1 pb-5">
+<div class="container">
+<h2 style="text-align: center;" id= "profil"><font face="Arial, Helvetica, sans-serif"><span style="font-size: 42px;"><b>LARIS CARGO INDONESIA</b></span></font></h2>
+
+<h2 style="text-align: center;"><font face="Arial, Helvetica, sans-serif"><span style="font-size: 30px;"><b>Jasa Kiriman Dan Transportasi Logistik Premium Berbiaya Ekonomi</b></span></font></h2>
+
+<h4 style="text-align: center;"><font face="Arial, Helvetica, sans-serif"><span style="font-size: 20px;">Berpengalaman 12 tahun lebih sampai sekarang.Melayani jasa pengiriman kargo keseluruh Indonesia dengan menggunakan tiga pilihan transportasi Darat, Laut dan Udara.Memudahkan pengguna jasa ekspedisi, mengatasi masalah pergerakan barang dari penjemputan sampai tujuan dengan cepat dan aman.</span></font></h4>
+<br>
+<br>
+<img
+                src="image/aplikasi.png"
+                class="card-img-top"
+                width="150"
+                height="550"
+              />
+<div class="container-fluid pt-2 pb-5">
+<div class="container text-left">
+<div class="row pt-4 gx-4 gy-4">
+<div class="col-md-4">
+<div class="card-image"><img class="card-img-top" height="150" src="image/efesiensi.png" width="100" />
+<div class="card-body">
+<h5 class="card-title">Efesiensi Biaya</h5>
+<p class="card-text">Dengan menggunakan teknologi digital,dapat mengurangi biaya operasional dan semua pengeluaran terdokumentasi.</p>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card-image"><img class="card-img-top" height="150" src="image/chattingan.png" width="100" />
+<div class="card-body">
+<h5 class="card-title">Komunikasi Dan Kordinasi Searah</h5>
+<p class="card-text">Komukasi dan kordinasi searah, mempercepat Operasional berjalan sesuai yang diharapkan, dengan aman.</p>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card-image"><img class="card-img-top" height="150" src="image/digitall.png" width="100" />
+<div class="card-body">
+<h5 class="card-title">Teknologi Digital</h5>
+<p class="card-text">Terintergrasinya semua sistem dengan mengunakan teknologi,berdampak kepada penghematan biaya.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Batas profil -->
+
+<p style="text-align: center;"></p>
+
+<p class="text-center"></p>
+
+<div class="clearfix pt-2">
+    <img class="img-fluid" src="image/cddlong.png" style="float: right;">
+
+    <br>
+<h5><p>Motto</p></h5>
+<p>Semakin Dekat melayani Anda Cepat, Aman Berbiaya Murah.</p>
+<h5><p>Visi</p></h5>
+<p>Menjadi perusahaan kargo yang dipercaya oleh customer di Indonesia 
+serta berkonstribusi dalam kemajuan usaha para pelanggan dan kesejaterahan masyarakat.</p>
+<h5><p>Misi</p></h5>
+<p>Selalu memberikan upaya terbaik kepada pelanggan.
+<p>Selalu melakukan pertimbangan yang matang penuh perhatian dan akurat dalam pelayanan.
+<p>Selalu menjalin kerjasama yang baik kepada pelanggan, pengusaha dan dapat diandalkan.
+<p>Selalu mengembangkan kekuatan jaringan dan infrastruktur yang ada dengan didukung SDM profesional dan memiliki integritas moral tinggi.
+<p>Selalu mengupayakan pertumbuhan dan pengembangan usaha guna mencapai kesejaterahan karyawan.
+<p>Meningkatkan tanggung jawab sosial sebagai bentuk kepedulian terhadap lingkungan sekitarnya.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- Layanan -->
+<div class="container-fluid pt-5 pb-5 bg-light">
+      <div class="container text-center">
+        <h4 style="text-align: center;" id="layanan"><span style="font-size:30px;"><strong>Berbagai Macam Layanan Kami Siapkan </strong></span></h4>
+        <br>
+        <p>
+        Kepuasan pelanggan menjadi prioritas utama kami,dengan pilihan layanan sesuai kebutuhan kiriman anda .
+        </p>
+        <div class="row pt-4 gx-4 gy-4">
+          <div class="col-md-4">
+            <div class="card crop-img">
+              <img
+                src="image/trucking.png"
+                class="card-img-top"
+                width="200"
+                height="200"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kiriman FTL</h5>
+                <p class="card-text">
+                  Dengan memilih kiriman Full Truck Load.Pengguna menguasai sepenuhnya kendaraan yang dipilih untuk membawa barang tersebut, tanpa dicampur dengan barang pengguna lainnya.
+                   <a href="halaman/ftl.html"><p class="card-text">Informasi Selanjutnya</a>
+                   </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card crop-img">
+              <img
+                src="image/container.png"
+                class="card-img-top"
+                width="200"
+                height="200"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kiriman FCL</h5>
+                <p class="card-text">
+                 Kiriman dengan Full Container Load, dipilih sebaiknya untuk kiriman antar pulau yang melintasi lautan dengan penguasaan penuh tanpa digabung dengan barang pengguna jasa lainnya.
+                  <a href="halaman/fcl.html"><p class="card-text">informasi Selanjutnya</a>
+                  </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card crop-img">
+              <img
+                src="image/lesstruckload.png"
+                class="card-img-top"
+                width="200"
+                height="200"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kiriman LTL</h5>
+                <p class="card-text">
+                  Jangan kwatir mikirin kargo berat anda dalam jumlah sedikit.Kami menyediakan layanan Less Truck Load.Layanan
+                  berbagi tempat dengan kargo berat lainnya.Buat kiriman segera tempat terbatas.
+         <a href="halaman/ltl.html"><p class="card-text">Informasi Selanjutnya</a>
+         </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card crop-img">
+              <img
+                src="image/lesscontainerload.png"
+                class="card-img-top"
+                width="200"
+                height="200"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kiriman LCL</h5>
+                <p class="card-text">
+                  Sama juga dengan less truck load.kiriman berat anda hanya sedikit, untuk dikirim antar pulau.Kami siap mengirimkannya dengan container yang digabung dengan lainnya.
+                  <a href="halaman/lcl.html"><p class="card-text">Informasi selanjutnya</a>
+                   </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card crop-img">
+              <img
+                src="image/reguler100.png"
+                class="card-img-top"
+                width="200"
+                height="200"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kiriman Reguler</h5>
+                <p class="card-text">
+                  Mulai dengan berat minim 10 kilogram sampai dengan 50 kilogram, kami dapat mengantarkan barang anda keseluruh Indonesia .
+            <a href="halaman/reguler.html"><p class="card-text">Informasi Selanjutnya</a>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card crop-img">
+              <img
+                src="image/express.png"
+                class="card-img-top"
+                width="200"
+                height="200"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kiriman Express</h5>
+                <p class="card-text">
+                  Dalam hitungan perkiraan 1 sampai dengan 4 hari tergantung jauhnya tujuan LARIS CARGO INDONESIA melayani kiriman express, dengan berat minimum 10 kilogram.
+                  <a href="halaman/express.html"><p class="card-text">Informasi Selanjutnya</a>
+                   </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+        
+          
+        
+
+            
+    <!-- Kirim -->
+    <div class="container-fluid pt-5 pb-5">
+      <div class="container">
+        <h4 style="text-align: center;" id="mitra"><span style="font-size:30px;"><strong>Mitra Kami</strong></span></h4>
+            <br>
+        <img
+                src="image/mitra.png"
+                class="card-img-top"
+                width="200"
+                height="600"
+              />
+         
+        </div>
+      </div>
+    </div>
+    
+
+         <!-- footer -->
+         <div class="container-fluid pt-3 pb-3 bg-primary">
+          <div class="container">
+            <footer
+            class="text-center text-lg-start text-white"
+            style="background-primary"
+            >
+      <!-- Section: Social media -->
+      <section
+               class="d-flex justify-content-between p-3"
+               style="background-primary"
+               >
+        <!-- Left -->
+        <div class="me-10">
+          <span><h5>Sosial Media :</h5></span>
+        </div>
+        <!-- Left -->
+  
+        <!-- Right -->
+        <div>
+          <h5>
+          <a style="text-decoration:none" a href="https://www.facebook.com/people/Laris-Cargo-Idn/pfbid02vZWZZpcykPiCuJwRvWttB1ypPQKC9xmap9JbJrfGczc7A5otEzZC4QPwTbgQttJxl/?locale=id_ID" class="text-white me-4">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a style="text-decoration:none" a href="https://twitter.com/LarisCargo_IDN" class="text-white me-4">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a style="text-decoration:none" a href="https://play.google.com" class="text-white me-4">
+            <i class="fa fa-google"></i>
+          </a>
+          <a style="text-decoration:none" a href="https://www.instagram.com/lariscargoidn?igsh=MWQ2OTB0ZDN5a2s4cg==" class="text-white me-4">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a style="text-decoration:none" a href="https://www.linkedin.com/in/laris-cargo-indonesia-80b665309/
+" class="text-white me-4">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a style="text-decoration:none" a href="https://youtu.be/_0XRPL4eJiQ" class="text-white me-4">
+            <i class="fa fa-youtube"></i>
+          </a>
+           
+          </h5>
+        </div>
+   </section>
+   </div>
+   </div>
+        <div class="container-fluid pt-2 pb-2 bg-dark">
+          <div class="container">
+        <div class="container my-5 bg-dark">
+
+          <!-- Footer -->
+          <footer
+                  class="text-center text-lg-start text-white"
+                  style="background-dark"
+                  id="hubungikami"
+                  >
+            <!-- Section: Social media -->
+           
+        
+            <!-- Section: Links  -->
+            <section class="">
+              <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text fw-bold">LARIS CARGO INDONESIA</h6>
+                    <hr
+                        class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px"
+                        />
+                    <p>
+                      Perusahaan ekspedisi kargo dan logistik domestik.Cepat berbiaya murah, berbasis teknologi digital dengan bermacam layanan.
+                      Memudahkan kiriman keseluruh Indonesia.
+                    </p>
+                    
+                
+                  </div>
+                  <!-- Grid column -->
+        
+                  <!-- Grid column -->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Informasi</h6>
+                    <hr
+                        class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px"
+                        />
+                        <p>
+                      <a style="text-decoration:none" a href="http://lctranslog.com/halaman/beritasatu" class="text-white">Berita</a>
+                    </p>
+                    <p>
+                      <a style="text-decoration:none" a href="#!" class="text-white">Karir</a>
+                    </p>
+                    <p>
+                      <a style="text-decoration:none" a href="" class="text-white">SOP</a>
+                    </p>
+                    <p>
+                      <a style="text-decoration:none" a href="#!" class="text-white">Syarat & Ketentuan</a>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+        
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Mitra Usaha</h6>
+                    <hr
+                        class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px"
+                        />
+                    <p>
+                      <a style="text-decoration:none" a href="http://app.lctranslog.com" class="text-white">Official</a>
+                    </p>
+                    
+                    <p>
+                      <a style="text-decoration:none" target="_blank" a href="#" class="text-white">Perusahaan</a>
+                    </p>
+                    <p>
+                      <a style="text-decoration:none" a href="#" class="text-white">UMKM</a>
+                    </p>
+                    <p>
+                      <a style="text-decoration:none" a href="#" class="text-white">Vendor</a>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+        
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Kantor</h6>
+                    <hr
+                        class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px"
+                        />
+                    <p><i class="fab  mr-3"></i>Jl.KH Noer Ali No.10<p>Bekasi Selatan - Indonesia.</p>
+
+                    <p><a style="text-decoration:none" href="https://mail.google.com/mail" class="fa fa-envelope text-white"> info@lctranslog.com</a>
+                    <p><a a style="text-decoration:none" href="https://api.whatsapp.com/send?phone=+6281231351882&text=Laris dapatkah anda dihubungi" class="fa fa-whatsapp text-white">
+                         081231351882, 085212572180</a>
+                    <p><a a style="text-decoration:none" class="fa fa-phone text-white"> 021 - 89493588 (Kantor)</a>
+                    
+                 <div style="position:fixed;right:20px;bottom:20px;">
+                  <a href="https://api.whatsapp.com/send?phone=+6281231351882&text=Hai Laris minta informasinya mengenai layanan anda.Terima kasih ">
+                  <button style="background:None; border:50px; center;">
+                  <img src="image/walogo.png"></button></a>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                </div>
+            </section>
+            <!-- Copyright -->
+            <div
+                 class="text-center p-3"
+                 style="background-dark"
+                 >
+              © 2023 Copyright: PT. LARIS CARGO INDONESIA
+              <a class="text-white" href="https://lctranslog.com"
+                 ></a
+                >
+            </div>
+            <!-- Copyright -->
+          </footer>
+          <!-- Footer -->
+        
+    </div>
+        <!-- End of .container -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script>
+      $(document).ready(function(){
+        $.ajax({
+            url: "https://staging.laraslog.com/api/cities", 
+            success: function(result){
+                results = JSON.parse(result);
+                
+                results.forEach(function(item){
+                    $('#asal,#tujuan').append('<option>'+item.text+'</option>')                    
+                })                
+            
+        }});
+
+        
+
+        $('#button-cek-tarif-darat').click(function(e){            
+            e.preventDefault();
+            $('#ongkirs').children().remove();
+            var total = 0;
+            var asal = $('#asal').val();    
+            var tujuan = $('#tujuan').val(); 
+            var berat = $('#berat').val();
+             $.ajax({
+            url: "https://staging.laraslog.com/api/ongkir", 
+            data:{
+                asal,
+                tujuan,
+                berat
+            },
+            success: function(result){
+                $('#ongkirs').removeClass('hidden'); 
+                var res = JSON.parse(result)
+                console.log(res);
+                table = '<table class="table table-collapse table-striped">'
+                table += `<tr><th>Tipe Kiriman</th><th>Berat (Kg)</th><th>Tarif</th></tr>`
+                    
+                    res.forEach(function(item){
+                        table += `<tr>`
+                        table += `<td><span class="text-capitalize">${item.type}</span> (${item.SLA})</td>`
+                        table += `<td>${berat}</td>`
+                        table += `<td>${new Intl.NumberFormat("id-ID").format(item.harga*berat)}</td>`
+                        table += `</tr>`
+                    })
+                table += '</table>'
+
+                $('#ongkirs').append(table);                   
+            }});
+        })
+
+        
+
+
+      })
+  </script>
+  
+  </body>
+  
+  </html>

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Berat Khusus</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet" 
+	crossorigin="anonymous"  />
+	<link href="stylelcl2.css" rel="stylesheet" />
+	<link rel="icon" type="image/x-icon" href="../image/logotranslogistik.png">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />    
+	
+</head>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1042.0">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+<div class="container-fluid"><a class="navbar-brand" href="">&nbsp; &nbsp; <img alt="" height="50" src="../image/logotranslogistik.png" width="50" /></a><button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"></button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	
+	<li class="nav-item"><a aria-current="page" class="nav-link active" href="http://lctranslog.com/#pencarian">Pencarian</a></li>
+	<li class="nav-item"><a aria-current="page" class="nav-link active" href="http://lctranslog.com/#profil">Profil</a></li>
+	<li class="nav-item"><a aria-current="page" class="nav-link active" href="http://lctranslog.com/#layanan">Layanan</a></li>
+	<li class="nav-item"><a aria-current="page" class="nav-link active" href="http://lctranslog.com/#mitra">Mitra</a></li>
+	<li class="nav-item"><a aria-current="page" class="nav-link active" href="http://lctranslog.com/#hubungikami">Hubungi Kami</a></li>
+	
+</ul>
+ <i class="bi bi-list mobile-nav-toggle"></i>
+<form class="d-flex">
+    <a href="../kemitraan/daftar.html" class="btn btn-danger" type="submit">Daftar Mitra Usaha</a>
+</form>
+</div>
+</div>
+</nav>
+
+
+<div class="container-fluid banner pt-3 pb-50">
+<div class="container text-center">
+    
+<br>
+<br>
+<br>
+
+
+<h4 style="text-align: center;"><span style="font-size:48px;"><p class="text-dark"><strong>Less Container Load (LCL)</strong></span></p></h4>
+
+<h4 style="text-align: center;"><span style="font-size:48px;"><p class="text-dark"><strong>Kiriman Antar Pulau Dengan Tonase Terbatas</strong></span></p></h4>
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+</div>
+</div>
+
+
+
+<!-- ======= Icon Boxes Section ======= -->
+<div class="container-fluid pt-5 pb-5 bg-dark">
+    <h2 style="text-align: center;" id= "pencarian"><font class="text-white" face="Arial, Helvetica, sans-serif"><span style="font-size: 30px;"><b>Lacak Atau Cek Tarif Kiriman Anda</b></span></font></h2>
+    <section id="icon-boxes" class="icon-boxes">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 text-white" data-aos="fade-up">
+                    <div class="icon-box">
+                        <h5>Lacak Kiriman</h5>
+                        <p class="description">
+                        <form action="/tracking/hasil" method="post" role="form">
+                            <input type="hidden" name="_token" value="">                            
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12">
+                                    <small class="form-text text-muted" style="color: #fff;">
+                                        <i></i>
+                                    </small>
+                                    <input type="text" class="form-control" name="resi" id="resi"
+                                        placeholder="No. Resi" style="background: #fff;">
+                            
+                                </div>
+                            </div>
+                            <br>
+                     
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-danger" id="btntrace">Lacak Kiriman
+                                </button>
+                            </div>
+                        </form>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 text-white" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box">
+                        <h5 class="title">Tarif Pengiriman</h5>
+                        <p class="description">
+                        <form action="/action_page.php" method="post" role="form">
+                            <input type="hidden" name="_token" value="">                
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12">
+                                    <div class="custom-combobox">
+                                        <select name="kiriman" id="asal"
+                                            class="js-example-basic-single-daratasal form-control">
+                                            <option value="selected disable">Asal</option>
+                                                                                           
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12 padding-atas">
+                                    <div class="custom-combobox">
+                                        <select id="tujuan" name="kiriman"
+                                            class="js-example-basic-single-kiriman form-control">
+                                            <option value="selected disable">Tujuan</option>
+                                                                                            
+                                                                                                                                                                                    
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 padding-atas">
+                                    <small class="form-text text-muted" style="color: #fff;">
+                                    
+                                        <br>
+                                    </small>
+                                    <input type="number" class="form-control" name="Kilo" id="berat"
+                                        required="" min="1" placeholder="Berat (Kg)" style="background: #fff;">
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <br>
+                                    <div class="text-center"><button type="submit" class="btn btn-danger"
+                                            id="button-cek-tarif-darat">Cek Tarif</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 text-white" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box">
+                        <h5 class="title">Tarif Full Truck Load</h5>
+                        <p class="description">
+                        <form action="" method="post" role="form">
+                            <input type="hidden" name="_token" value="">                            
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12">
+                                    <div class="custom-combobox">
+                                        <select id="ftl" name="ftl"
+                                            class="js-example-basic-single-gudang form-control">
+                                            <option value="disabled selected">Asal</option>
+                                                                                            
+                                                                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12 padding-atas">
+                                    <div class="custom-combobox">
+                                        <select id="ftl" name="ftl"
+                                            class="js-example-basic-single-ftl form-control" disabled>
+                                            <option value="disabled selected">Tujuan</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 padding-atas">
+                                    <small class="form-text text-muted" style="color: #fff;">
+                                        <br>
+                                    </small>
+                                    <input type="alphabet" class="form-control" name="ftl" id="ftl"
+                                        min="1" required="" placeholder="Jenis Truk" style="background: #fff;">
+                                </div>
+                
+                                <div class="col-md-6 col-lg-6">
+                                    <br>
+                                    <div class="text-center"><button type="submit" class="btn btn-danger"
+                                            id="button-sewa-ftl">Cek Tarif</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+    </div>
+    
+    
+    <!-- Form -->
+    
+<!-- batas atas -->
+<div class="container my-5" >    
+        <div id="ongkirs" class="py-3"></div>    
+</div>
+<div class="container-fluid pt-2 pb-5">
+<div class="container">
+<h2 style="text-align: center;" id= "profil"><font face="Arial, Helvetica, sans-serif"><span style="font-size: 42px;"><b>Kiriman Antar Pulau Dengan Minimum 1 Ton</b></span></font></h2>
+
+<h2 style="text-align: center;"><font face="Arial, Helvetica, sans-serif"><span style="font-size: 30px;"><b>Kami Berikan Tarif Yang Berbeda Dari Tarif Retail</b></span></font></h2>
+
+<h4 style="text-align: center;"><font face="Arial, Helvetica, sans-serif"><span style="font-size: 20px;"></span></font></h4>
+
+
+            
+    <!-- Jenis -->
+    <div class="container-fluid pt-5 pb-5">
+      <div class="container">
+      <img
+                src="../image/imagelcl.png"
+                class="card-img-top"
+                width="500"
+                height="500"
+              />
+        
+         
+        </div>
+      </div>
+    </div>
+    </div><!-- Kirim -->
+    <div class="container-fluid pt-5 pb-5 bg-light">
+      <div class="container">
+        <h4 style="text-align: center;" id="kirim"><span style="font-size:30px;"><strong>Permintaan Kiriman Less Container Load</strong></span></h4>
+        <p class="text-center">
+            <br>
+          Kirim barang berat antar pulau tapi sedikit.Gunakan layanan kami Less Container Load.Isi form dibawah ini, staff kami akan menghubungi anda.
+        </p>
+        <div class="row pb-3">
+          <div class="col-md-6">
+            <input
+              class="form-control form-control-lg mb-3"
+              type="text"
+              placeholder="Nama" autocomplete="on"
+            />
+            <input
+              class="form-control form-control-lg mb-3"
+              type="text"
+              placeholder="Alamat Pick Up"
+            />
+            <input
+              class="form-control form-control-lg mb-3"
+              type="text"
+              placeholder="Alamat Tujuan"
+              />
+            <input
+              class="form-control form-control-lg mb-3"
+              type="number"
+              placeholder="No. Whatsapp"
+            />
+            <input
+              class="form-control form-control-lg mb-3"
+              type="text"
+              placeholder="Email"
+            />
+            <input
+              class="form-control form-control-lg mb-3"
+              type="text"
+              placeholder="Isi Kiriman"
+              />
+          </div>
+          <div class="col-md-6">
+
+              <input
+              class="form-control form-control-lg mb-3"
+              type="number"
+              placeholder="Jumlah Kiriman"
+              />
+              <input
+              class="form-control form-control-lg mb-3"
+              type="number"
+              placeholder="Perkiraan Berat (Kg)"
+              />
+              <input
+              class="form-control form-control-lg mb-3"
+              type="text"
+              placeholder="Panjang (cm) x Lebar (cm) x Tinggi (cm)"
+              />
+               <select 
+              class="form-control form-control-lg mb-3 "
+              id="lcl" name="lcl" >
+              
+                <option value="layanan">Pilih Layanan</option>
+                <option value="lcl1">LcL 1 sd 1.5 Ton</option>
+                <option value="lcl2">LcL >1.5 sd 2 Ton</option>
+                <option value="lcl3">LcL >2 sd 3 Ton</option>
+             </select>
+              <input
+              class="form-control form-control-lg mb-3"
+              type="date" 
+              />
+              <input
+              class="form-control form-control-lg mb-3"
+              type="number"
+              placeholder="Catatan :"
+              />
+             
+             </div>
+        </div>
+        <div class="col-md-3 mx-auto text-center">
+          <button type="button" class="btn btn-danger btn-lg">
+            Buat Kiriman
+          </button>
+        </div>
+      </div>
+    </div>
+
+         <!-- footer -->
+         <div class="container-fluid pt-3 pb-3 bg-primary">
+          <div class="container">
+            <footer
+            class="text-center text-lg-start text-white"
+            style="background-primary"
+            >
+      <!-- Section: Social media -->
+      <section
+               class="d-flex justify-content-between p-3"
+               style="background-primary"
+               >
+        <!-- Left -->
+        <div class="me-10">
+          <span><h5>Sosial Media :</h5></span>
+        </div>
+        <!-- Left -->
+  
+        <!-- Right -->
+        <div>
+          <h5>
+          <a style="text-decoration:none" a href="" class="text-white me-4">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a style="text-decoration:none" a href="" class="text-white me-4">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a style="text-decoration:none" a href="https://play.google.com" class="text-white me-4">
+            <i class="fa fa-google"></i>
+          </a>
+          <a style="text-decoration:none" a href="" class="text-white me-4">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a style="text-decoration:none" a href="https://linkedin.com" class="text-white me-4">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a style="text-decoration:none" a href="https://youtube.com" class="text-white me-4">
+            <i class="fa fa-youtube"></i>
+          </a>
+          </h5>
+        </div>
+   </section>
+   </div>
+   </div>
+        <div class="container-fluid pt-2 pb-2 bg-dark">
+          <div class="container">
+        <div class="container my-5 bg-dark">
+
+          <!-- Footer -->
+          <footer
+                  class="text-center text-lg-start text-white"
+                  style="background-dark"
+                  id="hubungikami"
+                  >
+            <!-- Section: Social media -->
+           
+        
+            <!-- Section: Links  -->
+            <section class="">
+              <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text fw-bold">LARIS CARGO INDONESIA</h6>
+                    <hr
+                        class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px"
+                        />
+                    <p>
+                      Perusahaan ekspedisi kargo dan logistik domestik.Cepat berbiaya murah, berbasis teknologi digital dengan bermacam layanan.
+                      Memudahkan kiriman keseluruh Indonesia.
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+        
+                  <!-- Grid column -->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Informasi</h6>
+                    <hr
+                        class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px"
+                        />
+                        <p>
+                      <a style="text-decoration:none" a href="../halaman/beritasatu.html" class="text-white">Berita</a>
+                    </p>
+                    <p>
+                      <a style="text-decoration:none" a href="#!" class="text-white">Karir</a>
+                    </p>
+                    <p>
+                      <a style="text-decoration:none" a href="" class="text-white">SOP</a>
+                    </p>
+                    <p>
+                      <a style="text-decoration:none" a href="#!" class="text-white">Syarat & Ketentuan</a>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+        
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Mitra Usaha</h6>
+                    <hr
+                        class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px"
+                        />
+                    <p>
+                      <a style="text-decoration:none" a href="#" class="text-white">Official</a>
+                    </p>
+                    
+                    <p>
+                      <a style="text-decoration:none" target="_blank" a href="" class="text-white">Perusahaan</a>
+                    </p>
+                    <p>
+                      <a style="text-decoration:none" a href="#" class="text-white">UMKM</a>
+                    </p>
+                    <p>
+                      <a style="text-decoration:none" a href="#" class="text-white">Vendor</a>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+        
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Kantor</h6>
+                    <hr
+                        class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px"
+                        />
+                    <p><i class="fab  mr-3"></i>Jl. KH Noer Ali No.10<p>Bekasi Selatan - Indonesia.</p>
+
+                    <p><a style="text-decoration:none" href="https://mail.google.com/mail" class="fa fa-envelope text-white"> info@lctranslog.com</a>
+                    <p><a a style="text-decoration:none" href="https://api.whatsapp.com/send?phone=+6281231351882&text=Laris dapatkah anda dihubungi" class="fa fa-whatsapp text-white">
+                         0812 3135 1882</a>
+                    <p><a a style="text-decoration:none" class="fa fa-phone text-white"> 0813 7646 5712</a>
+                    
+                 <div style="position:fixed;right:20px;bottom:20px;">
+                  <a href="https://api.whatsapp.com/send?phone=+6281231351882&text=Hai Laris minta informasinya mengenai layanan anda.Terima kasih ">
+                  <button style="background:None; border:50px; center;">
+                  <img src="../image/walogo.png"></button></a>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                </div>
+            </section>
+            <!-- Copyright -->
+            <div
+                 class="text-center p-3"
+                 style="background-dark"
+                 >
+              © 2023 Copyright: PT. LARIS CARGO INDONESIA
+              <a class="text-white" href="https://lctranslog.com"
+                 ></a
+                >
+            </div>
+            <!-- Copyright -->
+          </footer>
+          <!-- Footer -->
+        
+    </div>
+        <!-- End of .container -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script>
+      $(document).ready(function(){
+        $.ajax({
+            url: "https://staging.laraslog.com/api/cities", 
+            success: function(result){
+                results = JSON.parse(result);
+                
+                results.forEach(function(item){
+                    $('#asal,#tujuan').append('<option>'+item.text+'</option>')                    
+                })                
+            
+        }});
+
+        
+
+        $('#button-cek-tarif-darat').click(function(e){            
+            e.preventDefault();
+            $('#ongkirs').children().remove();
+            var total = 0;
+            var asal = $('#asal').val();    
+            var tujuan = $('#tujuan').val(); 
+            var berat = $('#berat').val();
+             $.ajax({
+            url: "https://staging.laraslog.com/api/ongkir", 
+            data:{
+                asal,
+                tujuan,
+                berat
+            },
+            success: function(result){
+                $('#ongkirs').removeClass('hidden'); 
+                var res = JSON.parse(result)
+                console.log(res);
+                table = '<table class="table table-collapse table-striped">'
+                table += `<tr><th>Tipe Kiriman</th><th>Berat (Kg)</th><th>Tarif</th></tr>`
+                    
+                    res.forEach(function(item){
+                        table += `<tr>`
+                        table += `<td><span class="text-capitalize">${item.type}</span> (${item.SLA})</td>`
+                        table += `<td>${berat}</td>`
+                        table += `<td>${new Intl.NumberFormat("id-ID").format(item.harga*berat)}</td>`
+                        table += `</tr>`
+                    })
+                table += '</table>'
+
+                $('#ongkirs').append(table);                   
+            }});
+        })
+
+        
+
+
+      })
+  </script>
+  
+  </body>
+  
+  </html

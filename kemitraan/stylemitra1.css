@@ -1,0 +1,8 @@
+.banner {
+  background: url("../image/kemitraan.png");
+
+  background-size: cover;
+  padding-top: 5%;
+  padding-bottom: 300px;
+  color: #fff;
+}
